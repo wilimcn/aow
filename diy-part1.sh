@@ -12,8 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i 's/192.168.1.1/192.168.6.200/g' package/base-files/files/bin/config_generate
-sed -i "s/OpenWrt /$(date +%Y.%m.%d) by WINAS /g" package/lean/default-settings/files/zzz-default-settings
+
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
